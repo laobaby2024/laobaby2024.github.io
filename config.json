@@ -1,24 +1,6 @@
-"nav": [
-  {
-    "name": "Home",
-    "url": "/"
-  },
-  {
-    "name": "Blog",
-    "url": "/list/blog.html"
-  },
-  {
-    "name": "Tech",
-    "url": "/tag/tech.html"
-  },
-  {
-    "name": "About",
-    "url": "/about.html"
-  }
-]
 {
-    "title":"Blog Title",
-    "subTitle":"Blog description",
+    "title":"我的博客",
+    "subTitle":"博客副标题说明",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "GMEEK_VERSION":"last"
 }
