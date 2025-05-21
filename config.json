@@ -1,3 +1,21 @@
+"nav": [
+  {
+    "name": "Home",
+    "url": "/"
+  },
+  {
+    "name": "Blog",
+    "url": "/list/blog.html"
+  },
+  {
+    "name": "Tech",
+    "url": "/tag/tech.html"
+  },
+  {
+    "name": "About",
+    "url": "/about.html"
+  }
+]
 {
     "title":"Blog Title",
     "subTitle":"Blog description",
