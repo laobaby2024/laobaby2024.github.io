@@ -3,5 +3,6 @@
     "subTitle":"博客副标题说明",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "homeUrl":"https://laobaby2024.github.io/tag.html#bug",
+    "use_local_template": true,
     "GMEEK_VERSION":"last"
 }
