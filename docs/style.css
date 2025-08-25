@@ -1,0 +1,369 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.7;
+}
+
+header {
+    text-align: center;
+    padding: 2em 1em 1em;
+    background-color: #fdfdfd;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+}
+
+header h1 {
+    margin: 0.3em 0;
+    font-size: 1.8em;
+    color: #222;
+}
+
+header p {
+    margin: 0;
+    color: #555;
+    font-size: 1em;
+}
+
+nav {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.8em 0.5em;
+    display: block;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: #007acc;
+    text-decoration: underline;
+}
+
+/* 二级菜单 */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    min-width: 180px;
+    z-index: 100;
+    padding: 0.5em 0;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+nav ul ul li:last-child {
+    border-bottom: none;
+}
+
+/* 三级菜单 */
+nav ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+.divider {
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto 2em;
+    padding: 1.5em;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 0.8em 0;
+}
+
+.post-list li:last-child {
+    border-bottom: none;
+}
+
+.post-list a {
+    text-decoration: none;
+    color: #007acc;
+    font-size: 1.05em;
+}
+
+.post-list a:hover {
+    text-decoration: underline;
+}
+
+.post-date {
+    color: #666;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+footer {
+    margin-top: 2em;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    background-color: #fdfdfd;
+    border-top: 1px solid #ddd;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0 auto 1em;
+    width: 50%;
+}
+
+/* 文章页面专用样式 */
+.article-main {
+    max-width: 900px;
+    margin: 0 auto 2em;
+    padding: 1.5em;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.back-link {
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #eee;
+}
+
+.back-link a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* Notion文章内容样式 */
+.notion-article-content {
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+.notion-article-content h1, 
+.notion-article-content h2, 
+.notion-article-content h3,
+.notion-article-content h4,
+.notion-article-content h5,
+.notion-article-content h6 {
+    color: #222;
+    margin: 1.5em 0 0.8em;
+    font-weight: 600;
+}
+
+.notion-article-content h1 {
+    font-size: 1.8em;
+    border-bottom: 3px solid #007acc;
+    padding-bottom: 0.3em;
+    margin-top: 0;
+}
+
+.notion-article-content h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.2em;
+}
+
+.notion-article-content h3 {
+    font-size: 1.3em;
+    color: #007acc;
+}
+
+.notion-article-content p {
+    margin: 1em 0;
+    text-align: justify;
+}
+
+.notion-article-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.notion-article-content blockquote {
+    border-left: 4px solid #007acc;
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+    background-color: #f8f9ff;
+    border-radius: 0 8px 8px 0;
+    color: #555;
+    font-style: italic;
+    position: relative;
+}
+
+.notion-article-content blockquote::before {
+    content: '"';
+    font-size: 3em;
+    color: #007acc;
+    position: absolute;
+    left: 0.2em;
+    top: -0.1em;
+    opacity: 0.3;
+}
+
+.notion-article-content code {
+    background-color: #f1f3f4;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+    color: #d63384;
+    border: 1px solid #e1e5e9;
+}
+
+.notion-article-content pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5em;
+    overflow-x: auto;
+    margin: 1.5em 0;
+    position: relative;
+}
+
+.notion-article-content pre code {
+    background: none;
+    padding: 0;
+    border: none;
+    color: #333;
+    font-size: 0.9em;
+}
+
+.notion-article-content ul, 
+.notion-article-content ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+.notion-article-content li {
+    margin: 0.5em 0;
+}
+
+.notion-article-content ul li::marker {
+    color: #007acc;
+}
+
+.notion-article-content ol li::marker {
+    color: #007acc;
+    font-weight: bold;
+}
+
+.notion-article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.notion-article-content th,
+.notion-article-content td {
+    border: 1px solid #ddd;
+    padding: 0.8em;
+    text-align: left;
+}
+
+.notion-article-content th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.notion-article-content tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav > ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    nav ul ul {
+        position: static;
+        display: block;
+        border: none;
+        padding-left: 1em;
+        background: #f8f8f8;
+    }
+    
+    main, .article-main {
+        margin: 0 1em 2em;
+        padding: 1em;
+    }
+    
+    header {
+        padding: 1em;
+    }
+    
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .post-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+    }
+}
