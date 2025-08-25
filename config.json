@@ -1,6 +1,8 @@
 {
-    "title":"Blog Title",
+    "title":"测试一下自定义CSS",
     "subTitle":"Blog description",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
+    "script":"<script src='https://laobaby2024.github.io/docs/blog-layoutjs'></script>,
+    "style":"<script src='https://laobaby2024.github.io/docs/style.css'></script>,
     "GMEEK_VERSION":"last"
 }
